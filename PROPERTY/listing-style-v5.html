@@ -29,100 +29,62 @@
 </head>
 
 <body>
-    <!-- HEADER -->
     <header>
-        <!-- NAVBAR TOP -->
-        <div class="topbar d-none d-sm-block">
-            <div class="container ">
-                <div class="row">
-                    <div class="col-sm-12 col-md-5">
-                        <div class="topbar-left">
-                            <div class="topbar-text">
-                                Monday, March 22, 2020
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-7">
-                        <div class="list-unstyled topbar-right">
-                            <ul class="topbar-link">
-                                <li><a href="#" title="">Career</a></li>
-                                <li><a href="#" title="">Contact Us</a></li>
-                                <li><a href="#" title="">Login / Register</a></li>
-                            </ul>
-                            <ul class="topbar-sosmed">
-                                <li>
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-instagram"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- END NAVBAR TOP -->
+        
         <!-- NAVBAR -->
         <nav class="navbar navbar-hover navbar-expand-lg navbar-soft">
             <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="images/logo-blue-stiky.png" alt="" class="img-fluid">
+                <a class="navbar-brand" href="#" style="padding: 0;">
+                    <img src="images/zrs logo with Name-01.jpg" alt="" style="max-height: 100px; width: 130px;">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav99">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="main_nav99">
-                    <ul class="navbar-nav  mx-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link active " href="homepage-v4.html" > Home </a>
-                            
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../PROPERTY/index.html">Home</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Pages </a>
-                            <ul class="dropdown-menu animate fade-up">
-
-                                <li><a class="dropdown-item icon-arrow" href="#"> Property Listing </a>
-                                    <ul class="submenu dropdown-menu  animate fade-up">
-                                        <li><a class="dropdown-item" href="../PROPERTY/listing-style-v5.html"> Style 5</a></li>
-                                       
-                                    </ul>
-                                </li>
-                               
-                                <li><a class="dropdown-item" href="../PROPERTY/about-us.html">About us </a>
-                                    <li><a class="dropdown-item" href="../PROPERTY/login.html">Login </a>
-                                    <li><a class="dropdown-item" href="../PROPERTY/register.html"> Register </a>
-                                    <li><a class="dropdown-item" href="../PROPERTY/contact.html"> Contact </a>
-                               
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../PROPERTY/listing-style-v5.html">Property Listing</a>
                         </li>
-
-                        <li class="nav-item"><a class="nav-link" href="../PROPERTY/about-us.html"> About </a></li>
-
-                        <li class="nav-item"><a class="nav-link" href="../PROPERTY/contact.html"> contact </a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../PROPERTY/agent.html">Agents</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../PROPERTY/blog.html">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../PROPERTY/about-us.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../PROPERTY/contact.html">Contact</a>
+                        </li>
+                        <!-- Dropdown for Accounts -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="accountsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Accounts
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="accountsDropdown">
+                                <a class="dropdown-item" href="../PROPERTY/login.html">Login</a>
+                                <a class="dropdown-item" href="../PROPERTY/register.html">Register</a>
+                            </div>
+                        </li>
                     </ul>
-
-
-                    <!-- Search bar.// -->
                     <ul class="navbar-nav">
                         <li>
-                            <a href="#" class="btn btn-primary text-capitalize">
-                                <i class="fa fa-plus-circle mr-1"></i> add listing</a>
+                            <a href="../PROPERTY/add-property.html" class="btn text-capitalize" style="background-color: #11572E; color: #fff;">
+                                <i class="fa fa-plus-circle mr-1"></i> Add Property</a>
                         </li>
                     </ul>
-                    <!-- Search content bar.// -->
                     <div class="top-search navigation-shadow">
                         <div class="container">
-                            <div class="input-group ">
+                            <div class="input-group">
                                 <form action="#">
-
                                     <div class="row no-gutters mt-3">
                                         <div class="col">
                                             <input class="form-control border-secondary border-right-0 rounded-0"
-                                                type="search" value="" placeholder="Search " id="example-search-input4">
+                                                type="search" value="" placeholder="Search" id="example-search-input4">
                                         </div>
                                         <div class="col-auto">
                                             <a class="btn btn-outline-secondary border-left-0 rounded-0 rounded-right"
@@ -131,13 +93,11 @@
                                             </a>
                                         </div>
                                     </div>
-
                                 </form>
                             </div>
                         </div>
                     </div>
-                    <!-- Search content bar.// -->
-                </div> <!-- navbar-collapse.// -->
+                </div>
             </div>
         </nav>
         <!-- END NAVBAR -->
@@ -152,7 +112,7 @@
                         <ol class="breadcrumb mb-0 bg-light">
                             <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home"></i> </a></li>
                             <li class="breadcrumb-item"> <a href="#">Property</a></li>
-                            <li class="breadcrumb-item active"> <span class="text-capitalize"> Luxury family home</span>
+                            <li class="breadcrumb-item active"> <span class="text-capitalize" style="color: #11572E;"> Luxury family home</span>
                             </li>
 
                         </ol>
@@ -204,14 +164,15 @@
                         <div class="form-group">
                             <select class="wide select_option">
                                 <option data-display="Locations">Locations</option>
-                                <option>United Kingdom</option>
-                                <option>American Samoa</option>
-                                <option>Belgium</option>
-                                <option>Canada</option>
-                                <option>Delaware</option>
-                                <option>Indonesia</option>
-                                <option>Malaysia</option>
-                                <option>Japan</option>
+                                <option>Doha</option>
+                                <option>Al Wakrah</option>
+                                <option>Al Khor</option>
+                                <option>Al Rayyan</option>
+                                <option>Umm Salal</option>
+                                <option>Al Shamal</option>
+                                <option>Dukhan</option>
+                                <option>Mesaieed</option>
+                                
                             </select>
                         </div>
                     </div>
@@ -253,7 +214,7 @@
                     </div>
                     <div class="col-12 col-lg-3 col-md-3">
                         <div class="form-group">
-                            <button class="btn btn-primary text-uppercase btn-block"> search <i
+                            <button class="btn text-uppercase btn-block" style="background-color: #11572E; color: #fff;"> search <i
                                     class="fa fa-search ml-1"></i></button>
                         </div>
                     </div>
@@ -274,7 +235,7 @@
                                 <!-- FILTER VERTICAL -->
                                 <ul class="nav nav-pills myTab" role="tablist">
                                     <li class="list-inline-item mr-auto">
-                                        <span class="title-text">Sort by</span>
+                                        <span class="title-text" style="color: #11572E;">Sort by</span>
                                         <div class="btn-group">
                                             <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown"
                                                 aria-haspopup="true" aria-expanded="false">
@@ -315,8 +276,8 @@
                                                         <div class="col-md-4 col-lg-3 col-xl-4">
                                                             <div class="card__image__header h-250">
                                                                 <a href="#">
-                                                                    <div class="ribbon text-capitalize">sold out</div>
-                                                                    <img src="images/600x400.jpg" alt=""
+                                                                    <div class="ribbon text-capitalize" style="background-color: #11572E;">sold out</div>
+                                                                    <img src="images/apart2.jpg" alt=""
                                                                         class="img-fluid w100 img-transition">
                                                                     <div class="info"> for sale</div>
                                                                 </a>
@@ -326,9 +287,10 @@
                                                             <div class="card__image__body">
 
                                                                 <span
-                                                                    class="badge badge-primary text-capitalize mb-2">house</span>
+                                                                    class="badge badge-primary text-capitalize mb-2" style="background-color: #11572E;">house</span>
                                                                 <h6>
-                                                                    <a href="#">vila in coral gables</a>
+                                                                    <a href="#">Luxury Villa, The Pearl, Doha, Qatar
+                                                                    </a>
                                                                 </h6>
                                                                 <div class="card__image__body-desc">
                                                                     <!-- <p class="text-capitalize">
@@ -337,7 +299,8 @@
                     </p> -->
                                                                     <p class="text-capitalize">
                                                                         <i class="fa fa-map-marker"></i>
-                                                                        west flaminggo road, las vegas
+                                                                        West Bay, Doha, Qatar
+
                                                                     </p>
                                                                 </div>
 
@@ -374,7 +337,7 @@
                                                             class="col-md-4 col-lg-3 col-xl-3 my-auto card__image__footer-first">
                                                             <div class="card__image__footer">
                                                                 <figure>
-                                                                    <img src="images/80x80.jpg" alt=""
+                                                                    <img src="images/team1.jpg" alt=""
                                                                         class="img-fluid rounded-circle">
                                                                 </figure>
                                                                 <ul class="list-inline my-auto">
@@ -408,8 +371,8 @@
                                                         <div class="col-md-4 col-lg-3 col-xl-4">
                                                             <div class="card__image__header h-250">
                                                                 <a href="#">
-                                                                    <div class="ribbon text-capitalize">sold out</div>
-                                                                    <img src="images/600x400.jpg" alt=""
+                                                                    <div class="ribbon text-capitalize" style="background-color: #11572E;">sold out</div>
+                                                                    <img src="images/apart6.jpg" alt=""
                                                                         class="img-fluid w100 img-transition">
                                                                     <div class="info"> for sale</div>
                                                                 </a>
@@ -419,7 +382,7 @@
                                                             <div class="card__image__body">
 
                                                                 <span
-                                                                    class="badge badge-primary text-capitalize mb-2">house</span>
+                                                                    class="badge badge-primary text-capitalize mb-2" style="background-color: #11572E;">house</span>
                                                                 <h6>
                                                                     <a href="#">Ample Apartment At Last Floor</a>
                                                                 </h6>
@@ -430,7 +393,8 @@
                                     </p> -->
                                                                     <p class="text-capitalize">
                                                                         <i class="fa fa-map-marker"></i>
-                                                                        west flaminggo road, las vegas
+                                                                        West Bay, Doha, Qatar
+
                                                                     </p>
                                                                 </div>
 
@@ -501,8 +465,8 @@
                                                         <div class="col-md-4 col-lg-3 col-xl-4">
                                                             <div class="card__image__header h-250">
                                                                 <a href="#">
-                                                                    <div class="ribbon text-capitalize">sold out</div>
-                                                                    <img src="images/600x400.jpg" alt=""
+                                                                    <div class="ribbon text-capitalize" style="background-color: #11572E;">sold out</div>
+                                                                    <img src="images/apart4.jpg" alt=""
                                                                         class="img-fluid w100 img-transition">
                                                                     <div class="info"> for sale</div>
                                                                 </a>
@@ -512,7 +476,7 @@
                                                             <div class="card__image__body">
 
                                                                 <span
-                                                                    class="badge badge-primary text-capitalize mb-2">house</span>
+                                                                    class="badge badge-primary text-capitalize mb-2" style="background-color: #11572E;">house</span>
                                                                 <h6>
                                                                     <a href="#">Ample Apartment At Last Floor</a>
                                                                 </h6>
@@ -523,7 +487,8 @@
                                     </p> -->
                                                                     <p class="text-capitalize">
                                                                         <i class="fa fa-map-marker"></i>
-                                                                        west flaminggo road, las vegas
+                                                                        West Bay, Doha, Qatar
+
                                                                     </p>
                                                                 </div>
 
@@ -594,8 +559,8 @@
                                                         <div class="col-md-4 col-lg-3 col-xl-4">
                                                             <div class="card__image__header h-250">
                                                                 <a href="#">
-                                                                    <div class="ribbon text-capitalize">sold out</div>
-                                                                    <img src="images/600x400.jpg" alt=""
+                                                                    <div class="ribbon text-capitalize" style="background-color: #11572E;">sold out</div>
+                                                                    <img src="images/apart6.jpg" alt=""
                                                                         class="img-fluid w100 img-transition">
                                                                     <div class="info"> for sale</div>
                                                                 </a>
@@ -605,7 +570,7 @@
                                                             <div class="card__image__body">
 
                                                                 <span
-                                                                    class="badge badge-primary text-capitalize mb-2">house</span>
+                                                                    class="badge badge-primary text-capitalize mb-2" style="background-color: #11572E;">house</span>
                                                                 <h6>
                                                                     <a href="#">Family Home For Sale</a>
                                                                 </h6>
@@ -616,7 +581,8 @@
                                         </p> -->
                                                                     <p class="text-capitalize">
                                                                         <i class="fa fa-map-marker"></i>
-                                                                        west flaminggo road, las vegas
+                                                                        West Bay, Doha, Qatar
+
                                                                     </p>
                                                                 </div>
 
@@ -686,8 +652,8 @@
                                                         <div class="col-md-4 col-lg-3 col-xl-4">
                                                             <div class="card__image__header h-250">
                                                                 <a href="#">
-                                                                    <div class="ribbon text-capitalize">sold out</div>
-                                                                    <img src="images/600x400.jpg" alt=""
+                                                                    <div class="ribbon text-capitalize" style="background-color: #11572E;">sold out</div>
+                                                                    <img src="images/apart3.jpg" alt=""
                                                                         class="img-fluid w100 img-transition">
                                                                     <div class="info"> for sale</div>
                                                                 </a>
@@ -697,7 +663,7 @@
                                                             <div class="card__image__body">
 
                                                                 <span
-                                                                    class="badge badge-primary text-capitalize mb-2">house</span>
+                                                                    class="badge badge-primary text-capitalize mb-2" style="background-color: #11572E;">house</span>
                                                                 <h6>
                                                                     <a href="#">Luxury Villa With Pool</a>
                                                                 </h6>
@@ -708,7 +674,8 @@
                                         </p> -->
                                                                     <p class="text-capitalize">
                                                                         <i class="fa fa-map-marker"></i>
-                                                                        west flaminggo road, las vegas
+                                                                        West Bay, Doha, Qatar
+
                                                                     </p>
                                                                 </div>
 
@@ -779,8 +746,8 @@
                                                         <div class="col-md-4 col-lg-3 col-xl-4">
                                                             <div class="card__image__header h-250">
                                                                 <a href="#">
-                                                                    <div class="ribbon text-capitalize">sold out</div>
-                                                                    <img src="images/600x400.jpg" alt=""
+                                                                    <div class="ribbon text-capitalize" style="background-color: #11572E;">sold out</div>
+                                                                    <img src="images/apart4.jpg" alt=""
                                                                         class="img-fluid w100 img-transition">
                                                                     <div class="info"> for sale</div>
                                                                 </a>
@@ -790,7 +757,7 @@
                                                             <div class="card__image__body">
 
                                                                 <span
-                                                                    class="badge badge-primary text-capitalize mb-2">house</span>
+                                                                    class="badge badge-primary text-capitalize mb-2" style="background-color: #11572E;">house</span>
                                                                 <h6>
                                                                     <a href="#">184 Lexington Avenue</a>
                                                                 </h6>
@@ -801,7 +768,8 @@
                                         </p> -->
                                                                     <p class="text-capitalize">
                                                                         <i class="fa fa-map-marker"></i>
-                                                                        west flaminggo road, las vegas
+                                                                        West Bay, Doha, Qatar
+
                                                                     </p>
                                                                 </div>
 
@@ -872,8 +840,8 @@
                                                         <div class="col-md-4 col-lg-3 col-xl-4">
                                                             <div class="card__image__header h-250">
                                                                 <a href="#">
-                                                                    <div class="ribbon text-capitalize">sold out</div>
-                                                                    <img src="images/600x400.jpg" alt=""
+                                                                    <div class="ribbon text-capitalize" style="background-color: #11572E;">sold out</div>
+                                                                    <img src="images/apart7.jpg" alt=""
                                                                         class="img-fluid w100 img-transition">
                                                                     <div class="info"> for sale</div>
                                                                 </a>
@@ -883,7 +851,7 @@
                                                             <div class="card__image__body">
 
                                                                 <span
-                                                                    class="badge badge-primary text-capitalize mb-2">house</span>
+                                                                    class="badge badge-primary text-capitalize mb-2" style="background-color: #11572E;">house</span>
                                                                 <h6>
                                                                     <a href="#">The Citizen Apartment 5th Floor</a>
                                                                 </h6>
@@ -894,7 +862,8 @@
                                         </p> -->
                                                                     <p class="text-capitalize">
                                                                         <i class="fa fa-map-marker"></i>
-                                                                        west flaminggo road, las vegas
+                                                                        West Bay, Doha, Qatar
+
                                                                     </p>
                                                                 </div>
 
@@ -966,21 +935,22 @@
                                             <div class="col-md-4 col-lg-4">
                                                 <div class="card__image card__box-v1">
                                                     <div class="card__image-header h-250">
-                                                        <div class="ribbon text-capitalize">featured</div>
-                                                        <img src="images/600x400.jpg" alt=""
+                                                        <div class="ribbon text-capitalize" style="background-color: goldenrod; color: black;" >featured</div>
+                                                        <img src="images/apart4.jpg" alt=""
                                                             class="img-fluid w100 img-transition">
-                                                        <div class="info"> for sale</div>
+                                                        <div class="info" style="background-color: #11572E;"> for sale</div>
                                                     </div>
                                                     <div class="card__image-body">
                                                         <span
-                                                            class="badge badge-primary text-capitalize mb-2">house</span>
+                                                            class="badge badge-primary text-capitalize mb-2" style="background-color: #11572E;">house</span>
                                                         <h6 class="text-capitalize">
                                                             vila in coral gables
                                                         </h6>
 
                                                         <p class="text-capitalize">
                                                             <i class="fa fa-map-marker"></i>
-                                                            west flaminggo road, las vegas
+                                                            West Bay, Doha, Qatar
+
                                                         </p>
                                                         <ul class="list-inline card__content">
                                                             <li class="list-inline-item">
@@ -1010,48 +980,46 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="card__image-footer">
-                                                        <figure>
-                                                            <img src="images/80x80.jpg" alt=""
-                                                                class="img-fluid rounded-circle">
-                                                        </figure>
-                                                        <ul class="list-inline my-auto">
-                                                            <li class="list-inline-item ">
-                                                                <a href="#">
-                                                                    tom wilson
-                                                                </a>
-
-                                                            </li>
-
-                                                        </ul>
-                                                        <ul class="list-inline my-auto ml-auto">
-                                                            <li class="list-inline-item">
-
-                                                                <h6>$350.000</h6>
-                                                            </li>
-
-                                                        </ul>
+                                                    <div class="card__image-footer d-flex justify-content-between align-items-center">
+                                                        <div>
+                                                            <!-- WhatsApp Button -->
+                                                            <a href="https://wa.me/1234567890" 
+                                                               class="btn btn-sm" 
+                                                               style="color: #11572E; border: 1px solid #11572E; padding: 6px 12px; text-decoration: none; border-radius: 4px;" 
+                                                               target="_blank">
+                                                                <i class="fa fa-whatsapp"></i> WhatsApp
+                                                            </a>
+                                                    
+                                                            <!-- Call Button -->
+                                                            <a href="tel:1234567890" 
+                                                               class="btn btn-sm ml-2" 
+                                                               style="color: #11572E; border: 1px solid #11572E; padding: 6px 12px; text-decoration: none; border-radius: 4px;">
+                                                                <i class="fa fa-phone"></i> Call
+                                                            </a>
+                                                        </div>
+                                                        <h6 class="mb-0">$350,000</h6>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-4 col-lg-4">
                                                 <div class="card__image card__box-v1">
                                                     <div class="card__image-header h-250">
-                                                        <div class="ribbon text-capitalize">featured</div>
-                                                        <img src="images/600x400.jpg" alt=""
+                                                        <div class="ribbon text-capitalize" style="background-color: goldenrod; color: black;" >featured</div>
+                                                        <img src="images/apart2.jpg" alt=""
                                                             class="img-fluid w100 img-transition">
-                                                        <div class="info"> for sale</div>
+                                                        <div class="info" style="background-color: #11572E;"> for sale</div>
                                                     </div>
                                                     <div class="card__image-body">
                                                         <span
-                                                            class="badge badge-primary text-capitalize mb-2">house</span>
+                                                            class="badge badge-primary text-capitalize mb-2" style="background-color: #11572E;">house</span>
                                                         <h6 class="text-capitalize">
                                                             <a href="#">Contemporary Apartment</a>
                                                         </h6>
 
                                                         <p class="text-capitalize">
                                                             <i class="fa fa-map-marker"></i>
-                                                            west flaminggo road, las vegas
+                                                            West Bay, Doha, Qatar
+
                                                         </p>
                                                         <ul class="list-inline card__content">
                                                             <li class="list-inline-item">
@@ -1081,48 +1049,46 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="card__image-footer">
-                                                        <figure>
-                                                            <img src="images/logo.jpg" alt=""
-                                                                class="img-fluid rounded-circle">
-                                                        </figure>
-                                                        <ul class="list-inline my-auto">
-                                                            <li class="list-inline-item">
-                                                                <a href="#">
-                                                                    tom wilson
-                                                                </a>
-
-                                                            </li>
-
-                                                        </ul>
-                                                        <ul class="list-inline my-auto ml-auto">
-                                                            <li class="list-inline-item">
-
-                                                                <h6>$350.000</h6>
-                                                            </li>
-
-                                                        </ul>
+                                                    <div class="card__image-footer d-flex justify-content-between align-items-center">
+                                                        <div>
+                                                            <!-- WhatsApp Button -->
+                                                            <a href="https://wa.me/1234567890" 
+                                                               class="btn btn-sm" 
+                                                               style="color: #11572E; border: 1px solid #11572E; padding: 6px 12px; text-decoration: none; border-radius: 4px;" 
+                                                               target="_blank">
+                                                                <i class="fa fa-whatsapp"></i> WhatsApp
+                                                            </a>
+                                                    
+                                                            <!-- Call Button -->
+                                                            <a href="tel:1234567890" 
+                                                               class="btn btn-sm ml-2" 
+                                                               style="color: #11572E; border: 1px solid #11572E; padding: 6px 12px; text-decoration: none; border-radius: 4px;">
+                                                                <i class="fa fa-phone"></i> Call
+                                                            </a>
+                                                        </div>
+                                                        <h6 class="mb-0">$350,000</h6>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-4 col-lg-4">
                                                 <div class="card__image card__box-v1">
                                                     <div class="card__image-header h-250">
-                                                        <div class="ribbon text-capitalize">featured</div>
-                                                        <img src="images/600x400.jpg" alt=""
+                                                        <div class="ribbon text-capitalize" style="background-color: goldenrod; color: black;" >featured</div>
+                                                        <img src="images/apart3.jpg" alt=""
                                                             class="img-fluid w100 img-transition">
-                                                        <div class="info"> for sale</div>
+                                                        <div class="info" style="background-color:#11572E;"> for sale</div>
                                                     </div>
                                                     <div class="card__image-body">
                                                         <span
-                                                            class="badge badge-primary text-capitalize mb-2">house</span>
+                                                            class="badge badge-primary text-capitalize mb-2" style="background-color: #11572E;">house</span>
                                                         <h6 class="text-capitalize">
                                                             <a href="#">Family Home For Sale</a>
                                                         </h6>
 
                                                         <p class="text-capitalize">
                                                             <i class="fa fa-map-marker"></i>
-                                                            west flaminggo road, las vegas
+                                                            West Bay, Doha, Qatar
+
                                                         </p>
                                                         <ul class="list-inline card__content">
                                                             <li class="list-inline-item">
@@ -1152,27 +1118,24 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="card__image-footer">
-                                                        <figure>
-                                                            <img src="images/logo.jpg" alt=""
-                                                                class="img-fluid rounded-circle">
-                                                        </figure>
-                                                        <ul class="list-inline my-auto">
-                                                            <li class="list-inline-item">
-                                                                <a href="#">
-                                                                    tom wilson
-                                                                </a>
-
-                                                            </li>
-
-                                                        </ul>
-                                                        <ul class="list-inline my-auto ml-auto">
-                                                            <li class="list-inline-item">
-
-                                                                <h6>$350.000</h6>
-                                                            </li>
-
-                                                        </ul>
+                                                    <div class="card__image-footer d-flex justify-content-between align-items-center">
+                                                        <div>
+                                                            <!-- WhatsApp Button -->
+                                                            <a href="https://wa.me/1234567890" 
+                                                               class="btn btn-sm" 
+                                                               style="color: #11572E; border: 1px solid #11572E; padding: 6px 12px; text-decoration: none; border-radius: 4px;" 
+                                                               target="_blank">
+                                                                <i class="fa fa-whatsapp"></i> WhatsApp
+                                                            </a>
+                                                    
+                                                            <!-- Call Button -->
+                                                            <a href="tel:1234567890" 
+                                                               class="btn btn-sm ml-2" 
+                                                               style="color: #11572E; border: 1px solid #11572E; padding: 6px 12px; text-decoration: none; border-radius: 4px;">
+                                                                <i class="fa fa-phone"></i> Call
+                                                            </a>
+                                                        </div>
+                                                        <h6 class="mb-0">$350,000</h6>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1181,21 +1144,22 @@
                                             <div class="col-md-4 col-lg-4">
                                                 <div class="card__image card__box-v1">
                                                     <div class="card__image-header h-250">
-                                                        <div class="ribbon text-capitalize">featured</div>
-                                                        <img src="images/600x400.jpg" alt=""
+                                                        <div class="ribbon text-capitalize" style="background-color: goldenrod; color: black;" >featured</div>
+                                                        <img src="images/apart7.jpg" alt=""
                                                             class="img-fluid w100 img-transition">
-                                                        <div class="info"> for sale</div>
+                                                        <div class="info" style="background-color: #11572E;"> for sale</div>
                                                     </div>
                                                     <div class="card__image-body">
                                                         <span
-                                                            class="badge badge-primary text-capitalize mb-2">house</span>
+                                                            class="badge badge-primary text-capitalize mb-2" style="background-color: #11572E;">house</span>
                                                         <h6 class="text-capitalize">
                                                             <a href="#">Luxury Villa With Pool</a>
                                                         </h6>
 
                                                         <p class="text-capitalize">
                                                             <i class="fa fa-map-marker"></i>
-                                                            west flaminggo road, las vegas
+                                                            West Bay, Doha, Qatar
+
                                                         </p>
                                                         <ul class="list-inline card__content">
                                                             <li class="list-inline-item">
@@ -1225,48 +1189,46 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="card__image-footer">
-                                                        <figure>
-                                                            <img src="images/logo.jpg" alt=""
-                                                                class="img-fluid rounded-circle">
-                                                        </figure>
-                                                        <ul class="list-inline my-auto">
-                                                            <li class="list-inline-item">
-                                                                <a href="#">
-                                                                    tom wilson
-                                                                </a>
-
-                                                            </li>
-
-                                                        </ul>
-                                                        <ul class="list-inline my-auto ml-auto">
-                                                            <li class="list-inline-item">
-
-                                                                <h6>$350.000</h6>
-                                                            </li>
-
-                                                        </ul>
+                                                    <div class="card__image-footer d-flex justify-content-between align-items-center">
+                                                        <div>
+                                                            <!-- WhatsApp Button -->
+                                                            <a href="https://wa.me/1234567890" 
+                                                               class="btn btn-sm" 
+                                                               style="color: #11572E; border: 1px solid #11572E; padding: 6px 12px; text-decoration: none; border-radius: 4px;" 
+                                                               target="_blank">
+                                                                <i class="fa fa-whatsapp"></i> WhatsApp
+                                                            </a>
+                                                    
+                                                            <!-- Call Button -->
+                                                            <a href="tel:1234567890" 
+                                                               class="btn btn-sm ml-2" 
+                                                               style="color: #11572E; border: 1px solid #11572E; padding: 6px 12px; text-decoration: none; border-radius: 4px;">
+                                                                <i class="fa fa-phone"></i> Call
+                                                            </a>
+                                                        </div>
+                                                        <h6 class="mb-0">$350,000</h6>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-4 col-lg-4">
                                                 <div class="card__image card__box-v1">
                                                     <div class="card__image-header h-250">
-                                                        <div class="ribbon text-capitalize">featured</div>
-                                                        <img src="images/600x400.jpg" alt=""
+                                                        <div class="ribbon text-capitalize" style="background-color: goldenrod; color: black;" >featured</div>
+                                                        <img src="images/apart4.jpg" alt=""
                                                             class="img-fluid w100 img-transition">
-                                                        <div class="info"> for sale</div>
+                                                        <div class="info" style="background-color: #11572E;"> for sale</div>
                                                     </div>
                                                     <div class="card__image-body">
                                                         <span
-                                                            class="badge badge-primary text-capitalize mb-2">house</span>
+                                                            class="badge badge-primary text-capitalize mb-2" style="background-color: #11572E;">house</span>
                                                         <h6 class="text-capitalize">
                                                             <a href="#">184 Lexington Avenue</a>
                                                         </h6>
 
                                                         <p class="text-capitalize">
                                                             <i class="fa fa-map-marker"></i>
-                                                            west flaminggo road, las vegas
+                                                            West Bay, Doha, Qatar
+
                                                         </p>
                                                         <ul class="list-inline card__content">
                                                             <li class="list-inline-item">
@@ -1296,48 +1258,46 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="card__image-footer">
-                                                        <figure>
-                                                            <img src="images/logo.jpg" alt=""
-                                                                class="img-fluid rounded-circle">
-                                                        </figure>
-                                                        <ul class="list-inline my-auto">
-                                                            <li class="list-inline-item">
-                                                                <a href="#">
-                                                                    tom wilson
-                                                                </a>
-
-                                                            </li>
-
-                                                        </ul>
-                                                        <ul class="list-inline my-auto ml-auto">
-                                                            <li class="list-inline-item">
-
-                                                                <h6>$350.000</h6>
-                                                            </li>
-
-                                                        </ul>
+                                                    <div class="card__image-footer d-flex justify-content-between align-items-center">
+                                                        <div>
+                                                            <!-- WhatsApp Button -->
+                                                            <a href="https://wa.me/1234567890" 
+                                                               class="btn btn-sm" 
+                                                               style="color: #11572E; border: 1px solid #11572E; padding: 6px 12px; text-decoration: none; border-radius: 4px;" 
+                                                               target="_blank">
+                                                                <i class="fa fa-whatsapp"></i> WhatsApp
+                                                            </a>
+                                                    
+                                                            <!-- Call Button -->
+                                                            <a href="tel:1234567890" 
+                                                               class="btn btn-sm ml-2" 
+                                                               style="color: #11572E; border: 1px solid #11572E; padding: 6px 12px; text-decoration: none; border-radius: 4px;">
+                                                                <i class="fa fa-phone"></i> Call
+                                                            </a>
+                                                        </div>
+                                                        <h6 class="mb-0">$350,000</h6>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-4 col-lg-4">
                                                 <div class="card__image card__box-v1">
                                                     <div class="card__image-header h-250">
-                                                        <div class="ribbon text-capitalize">featured</div>
-                                                        <img src="images/600x400.jpg" alt=""
+                                                        <div class="ribbon text-capitalize" style="background-color: goldenrod; color: black;" >featured</div>
+                                                        <img src="images/apart6.jpg" alt=""
                                                             class="img-fluid w100 img-transition">
-                                                        <div class="info"> for sale</div>
+                                                        <div class="info" style="background-color: #11572E;"> for sale</div>
                                                     </div>
                                                     <div class="card__image-body">
                                                         <span
-                                                            class="badge badge-primary text-capitalize mb-2">house</span>
+                                                            class="badge badge-primary text-capitalize mb-2" style="background-color: #11572E;">house</span>
                                                         <h6 class="text-capitalize">
                                                             <a href="#">The Citizen Apartment 5th Floor</a>
                                                         </h6>
 
                                                         <p class="text-capitalize">
                                                             <i class="fa fa-map-marker"></i>
-                                                            west flaminggo road, las vegas
+                                                            West Bay, Doha, Qatar
+
                                                         </p>
                                                         <ul class="list-inline card__content">
                                                             <li class="list-inline-item">
@@ -1367,27 +1327,24 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="card__image-footer">
-                                                        <figure>
-                                                            <img src="images/logo.jpg" alt=""
-                                                                class="img-fluid rounded-circle">
-                                                        </figure>
-                                                        <ul class="list-inline my-auto">
-                                                            <li class="list-inline-item">
-                                                                <a href="#">
-                                                                    tom wilson
-                                                                </a>
-
-                                                            </li>
-
-                                                        </ul>
-                                                        <ul class="list-inline my-auto ml-auto">
-                                                            <li class="list-inline-item">
-
-                                                                <h6>$350.000</h6>
-                                                            </li>
-
-                                                        </ul>
+                                                    <div class="card__image-footer d-flex justify-content-between align-items-center">
+                                                        <div>
+                                                            <!-- WhatsApp Button -->
+                                                            <a href="https://wa.me/1234567890" 
+                                                               class="btn btn-sm" 
+                                                               style="color: #11572E; border: 1px solid #11572E; padding: 6px 12px; text-decoration: none; border-radius: 4px;" 
+                                                               target="_blank">
+                                                                <i class="fa fa-whatsapp"></i> WhatsApp
+                                                            </a>
+                                                    
+                                                            <!-- Call Button -->
+                                                            <a href="tel:1234567890" 
+                                                               class="btn btn-sm ml-2" 
+                                                               style="color: #11572E; border: 1px solid #11572E; padding: 6px 12px; text-decoration: none; border-radius: 4px;">
+                                                                <i class="fa fa-phone"></i> Call
+                                                            </a>
+                                                        </div>
+                                                        <h6 class="mb-0">$350,000</h6>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1396,21 +1353,22 @@
                                             <div class="col-md-4 col-lg-4">
                                                 <div class="card__image card__box-v1">
                                                     <div class="card__image-header h-250">
-                                                        <div class="ribbon text-capitalize">featured</div>
-                                                        <img src="images/600x400.jpg" alt=""
+                                                        <div class="ribbon text-capitalize" style="background-color: goldenrod; color: black;" >featured</div>
+                                                        <img src="images/apart3.jpg" alt=""
                                                             class="img-fluid w100 img-transition">
-                                                        <div class="info"> for sale</div>
+                                                        <div class="info" style="background-color: #11572E;"> for sale</div>
                                                     </div>
                                                     <div class="card__image-body">
                                                         <span
-                                                            class="badge badge-primary text-capitalize mb-2">house</span>
+                                                            class="badge badge-primary text-capitalize mb-2" style="background-color: #11572E;">house</span>
                                                         <h6 class="text-capitalize">
                                                             <a href="#">Family Home For Sale</a>
                                                         </h6>
 
                                                         <p class="text-capitalize">
                                                             <i class="fa fa-map-marker"></i>
-                                                            west flaminggo road, las vegas
+                                                            West Bay, Doha, Qatar
+
                                                         </p>
                                                         <ul class="list-inline card__content">
                                                             <li class="list-inline-item">
@@ -1440,27 +1398,24 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="card__image-footer">
-                                                        <figure>
-                                                            <img src="images/logo.jpg" alt=""
-                                                                class="img-fluid rounded-circle">
-                                                        </figure>
-                                                        <ul class="list-inline my-auto">
-                                                            <li class="list-inline-item">
-                                                                <a href="#">
-                                                                    tom wilson
-                                                                </a>
-
-                                                            </li>
-
-                                                        </ul>
-                                                        <ul class="list-inline my-auto ml-auto">
-                                                            <li class="list-inline-item">
-
-                                                                <h6>$350.000</h6>
-                                                            </li>
-
-                                                        </ul>
+                                                    <div class="card__image-footer d-flex justify-content-between align-items-center">
+                                                        <div>
+                                                            <!-- WhatsApp Button -->
+                                                            <a href="https://wa.me/1234567890" 
+                                                               class="btn btn-sm" 
+                                                               style="color: #11572E; border: 1px solid #11572E; padding: 6px 12px; text-decoration: none; border-radius: 4px;" 
+                                                               target="_blank">
+                                                                <i class="fa fa-whatsapp"></i> WhatsApp
+                                                            </a>
+                                                    
+                                                            <!-- Call Button -->
+                                                            <a href="tel:1234567890" 
+                                                               class="btn btn-sm ml-2" 
+                                                               style="color: #11572E; border: 1px solid #11572E; padding: 6px 12px; text-decoration: none; border-radius: 4px;">
+                                                                <i class="fa fa-phone"></i> Call
+                                                            </a>
+                                                        </div>
+                                                        <h6 class="mb-0">$350,000</h6>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1468,21 +1423,22 @@
                                                 <!-- ONE -->
                                                 <div class="card__image card__box-v1">
                                                     <div class="card__image-header h-250">
-                                                        <div class="ribbon text-capitalize">featured</div>
-                                                        <img src="images/600x400.jpg" alt=""
+                                                        <div class="ribbon text-capitalize" style="background-color: goldenrod; color: black;" >featured</div>
+                                                        <img src="images/apart2.jpg" alt=""
                                                             class="img-fluid w100 img-transition">
-                                                        <div class="info"> for sale</div>
+                                                        <div class="info" style="background-color: #11572E;"> for sale</div>
                                                     </div>
                                                     <div class="card__image-body">
                                                         <span
-                                                            class="badge badge-primary text-capitalize mb-2">house</span>
+                                                            class="badge badge-primary text-capitalize mb-2" style="background-color: #11572E;">house</span>
                                                         <h6 class="text-capitalize">
                                                             <a href="#">vila in coral gables</a>
                                                         </h6>
 
                                                         <p class="text-capitalize">
                                                             <i class="fa fa-map-marker"></i>
-                                                            west flaminggo road, las vegas
+                                                            West Bay, Doha, Qatar
+
                                                         </p>
                                                         <ul class="list-inline card__content">
                                                             <li class="list-inline-item">
@@ -1512,27 +1468,24 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="card__image-footer">
-                                                        <figure>
-                                                            <img src="images/80x80.jpg" alt=""
-                                                                class="img-fluid rounded-circle">
-                                                        </figure>
-                                                        <ul class="list-inline my-auto">
-                                                            <li class="list-inline-item">
-                                                                <a href="#">
-                                                                    tom wilson
-                                                                </a>
-
-                                                            </li>
-
-                                                        </ul>
-                                                        <ul class="list-inline my-auto ml-auto">
-                                                            <li class="list-inline-item">
-
-                                                                <h6>$350.000</h6>
-                                                            </li>
-
-                                                        </ul>
+                                                    <div class="card__image-footer d-flex justify-content-between align-items-center">
+                                                        <div>
+                                                            <!-- WhatsApp Button -->
+                                                            <a href="https://wa.me/1234567890" 
+                                                               class="btn btn-sm" 
+                                                               style="color: #11572E; border: 1px solid #11572E; padding: 6px 12px; text-decoration: none; border-radius: 4px;" 
+                                                               target="_blank">
+                                                                <i class="fa fa-whatsapp"></i> WhatsApp
+                                                            </a>
+                                                    
+                                                            <!-- Call Button -->
+                                                            <a href="tel:1234567890" 
+                                                               class="btn btn-sm ml-2" 
+                                                               style="color: #11572E; border: 1px solid #11572E; padding: 6px 12px; text-decoration: none; border-radius: 4px;">
+                                                                <i class="fa fa-phone"></i> Call
+                                                            </a>
+                                                        </div>
+                                                        <h6 class="mb-0">$350,000</h6>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1540,21 +1493,22 @@
                                                 <!-- TWO -->
                                                 <div class="card__image card__box-v1">
                                                     <div class="card__image-header h-250">
-                                                        <div class="ribbon text-capitalize">featured</div>
-                                                        <img src="images/600x400.jpg" alt=""
+                                                        <div class="ribbon text-capitalize" style="background-color: goldenrod; color: black;" >featured</div>
+                                                        <img src="images/apart6.jpg" alt=""
                                                             class="img-fluid w100 img-transition">
-                                                        <div class="info"> for sale</div>
+                                                        <div class="info" style="background-color: #11572E;"> for sale</div>
                                                     </div>
                                                     <div class="card__image-body">
                                                         <span
-                                                            class="badge badge-primary text-capitalize mb-2">house</span>
+                                                            class="badge badge-primary text-capitalize mb-2" style="background-color: #11572E;">house</span>
                                                         <h6 class="text-capitalize">
                                                             <a href="#">Ample Apartment At Last Floor</a>
                                                         </h6>
 
                                                         <p class="text-capitalize">
                                                             <i class="fa fa-map-marker"></i>
-                                                            west flaminggo road, las vegas
+                                                            West Bay, Doha, Qatar
+
                                                         </p>
                                                         <ul class="list-inline card__content">
                                                             <li class="list-inline-item">
@@ -1584,27 +1538,24 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="card__image-footer">
-                                                        <figure>
-                                                            <img src="images/80x80.jpg" alt=""
-                                                                class="img-fluid rounded-circle">
-                                                        </figure>
-                                                        <ul class="list-inline my-auto">
-                                                            <li class="list-inline-item">
-                                                                <a href="#">
-                                                                    tom wilson
-                                                                </a>
-
-                                                            </li>
-
-                                                        </ul>
-                                                        <ul class="list-inline my-auto ml-auto">
-                                                            <li class="list-inline-item">
-
-                                                                <h6>$350.000</h6>
-                                                            </li>
-
-                                                        </ul>
+                                                    <div class="card__image-footer d-flex justify-content-between align-items-center">
+                                                        <div>
+                                                            <!-- WhatsApp Button -->
+                                                            <a href="https://wa.me/1234567890" 
+                                                               class="btn btn-sm" 
+                                                               style="color: #11572E; border: 1px solid #11572E; padding: 6px 12px; text-decoration: none; border-radius: 4px;" 
+                                                               target="_blank">
+                                                                <i class="fa fa-whatsapp"></i> WhatsApp
+                                                            </a>
+                                                    
+                                                            <!-- Call Button -->
+                                                            <a href="tel:1234567890" 
+                                                               class="btn btn-sm ml-2" 
+                                                               style="color: #11572E; border: 1px solid #11572E; padding: 6px 12px; text-decoration: none; border-radius: 4px;">
+                                                                <i class="fa fa-phone"></i> Call
+                                                            </a>
+                                                        </div>
+                                                        <h6 class="mb-0">$350,000</h6>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1614,21 +1565,22 @@
                                                 <!-- THREE -->
                                                 <div class="card__image card__box-v1">
                                                     <div class="card__image-header h-250">
-                                                        <div class="ribbon text-capitalize">featured</div>
-                                                        <img src="images/600x400.jpg" alt=""
+                                                        <div class="ribbon text-capitalize" style="background-color: goldenrod; color: black;" >featured</div>
+                                                        <img src="images/apart6.jpg" alt=""
                                                             class="img-fluid w100 img-transition">
-                                                        <div class="info"> for sale</div>
+                                                        <div class="info" style="background-color: #11572E;"> for sale</div>
                                                     </div>
                                                     <div class="card__image-body">
                                                         <span
-                                                            class="badge badge-primary text-capitalize mb-2">house</span>
+                                                            class="badge badge-primary text-capitalize mb-2" style="background-color: #11572E;">house</span>
                                                         <h6 class="text-capitalize">
                                                             <a href="#">Contemporary Apartment</a>
                                                         </h6>
 
                                                         <p class="text-capitalize">
                                                             <i class="fa fa-map-marker"></i>
-                                                            west flaminggo road, las vegas
+                                                            West Bay, Doha, Qatar
+
                                                         </p>
                                                         <ul class="list-inline card__content">
                                                             <li class="list-inline-item">
@@ -1658,48 +1610,46 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="card__image-footer">
-                                                        <figure>
-                                                            <img src="images/80x80.jpg" alt=""
-                                                                class="img-fluid rounded-circle">
-                                                        </figure>
-                                                        <ul class="list-inline my-auto">
-                                                            <li class="list-inline-item">
-                                                                <a href="#">
-                                                                    tom wilson
-                                                                </a>
-
-                                                            </li>
-
-                                                        </ul>
-                                                        <ul class="list-inline my-auto ml-auto">
-                                                            <li class="list-inline-item">
-
-                                                                <h6>$350.000</h6>
-                                                            </li>
-
-                                                        </ul>
+                                                    <div class="card__image-footer d-flex justify-content-between align-items-center">
+                                                        <div>
+                                                            <!-- WhatsApp Button -->
+                                                            <a href="https://wa.me/1234567890" 
+                                                               class="btn btn-sm" 
+                                                               style="color: #11572E; border: 1px solid #11572E; padding: 6px 12px; text-decoration: none; border-radius: 4px;" 
+                                                               target="_blank">
+                                                                <i class="fa fa-whatsapp"></i> WhatsApp
+                                                            </a>
+                                                    
+                                                            <!-- Call Button -->
+                                                            <a href="tel:1234567890" 
+                                                               class="btn btn-sm ml-2" 
+                                                               style="color: #11572E; border: 1px solid #11572E; padding: 6px 12px; text-decoration: none; border-radius: 4px;">
+                                                                <i class="fa fa-phone"></i> Call
+                                                            </a>
+                                                        </div>
+                                                        <h6 class="mb-0">$350,000</h6>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-4 col-lg-4">
                                                 <div class="card__image card__box-v1">
                                                     <div class="card__image-header h-250">
-                                                        <div class="ribbon text-capitalize">featured</div>
-                                                        <img src="images/600x400.jpg" alt=""
+                                                        <div class="ribbon text-capitalize" style="background-color: goldenrod; color: black;" >featured</div>
+                                                        <img src="images/apart4.jpg" alt=""
                                                             class="img-fluid w100 img-transition">
-                                                        <div class="info"> for sale</div>
+                                                        <div class="info" style="background-color: #11572E;"> for sale</div>
                                                     </div>
                                                     <div class="card__image-body">
                                                         <span
-                                                            class="badge badge-primary text-capitalize mb-2">house</span>
+                                                            class="badge badge-primary text-capitalize mb-2" style="background-color: #11572E;">house</span>
                                                         <h6 class="text-capitalize">
                                                             <a href="#">Family Home For Sale</a>
                                                         </h6>
 
                                                         <p class="text-capitalize">
                                                             <i class="fa fa-map-marker"></i>
-                                                            west flaminggo road, las vegas
+                                                            West Bay, Doha, Qatar
+
                                                         </p>
                                                         <ul class="list-inline card__content">
                                                             <li class="list-inline-item">
@@ -1729,48 +1679,46 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="card__image-footer">
-                                                        <figure>
-                                                            <img src="images/80x80.jpg" alt=""
-                                                                class="img-fluid rounded-circle">
-                                                        </figure>
-                                                        <ul class="list-inline my-auto">
-                                                            <li class="list-inline-item">
-                                                                <a href="#">
-                                                                    tom wilson
-                                                                </a>
-
-                                                            </li>
-
-                                                        </ul>
-                                                        <ul class="list-inline my-auto ml-auto">
-                                                            <li class="list-inline-item">
-
-                                                                <h6>$350.000</h6>
-                                                            </li>
-
-                                                        </ul>
+                                                    <div class="card__image-footer d-flex justify-content-between align-items-center">
+                                                        <div>
+                                                            <!-- WhatsApp Button -->
+                                                            <a href="https://wa.me/1234567890" 
+                                                               class="btn btn-sm" 
+                                                               style="color: #11572E; border: 1px solid #11572E; padding: 6px 12px; text-decoration: none; border-radius: 4px;" 
+                                                               target="_blank">
+                                                                <i class="fa fa-whatsapp"></i> WhatsApp
+                                                            </a>
+                                                    
+                                                            <!-- Call Button -->
+                                                            <a href="tel:1234567890" 
+                                                               class="btn btn-sm ml-2" 
+                                                               style="color: #11572E; border: 1px solid #11572E; padding: 6px 12px; text-decoration: none; border-radius: 4px;">
+                                                                <i class="fa fa-phone"></i> Call
+                                                            </a>
+                                                        </div>
+                                                        <h6 class="mb-0">$350,000</h6>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-md-4 col-lg-4">
                                                 <div class="card__image card__box-v1">
                                                     <div class="card__image-header h-250">
-                                                        <div class="ribbon text-capitalize">featured</div>
-                                                        <img src="images/600x400.jpg" alt=""
+                                                        <div class="ribbon text-capitalize" style="background-color: goldenrod; color: black;" >featured</div>
+                                                        <img src="images/apart7.jpg" alt=""
                                                             class="img-fluid w100 img-transition">
-                                                        <div class="info"> for sale</div>
+                                                        <div class="info" style="background-color: #11572E;"> for sale</div>
                                                     </div>
                                                     <div class="card__image-body">
                                                         <span
-                                                            class="badge badge-primary text-capitalize mb-2">house</span>
+                                                            class="badge badge-primary text-capitalize mb-2" style="background-color: #11572E;">house</span>
                                                         <h6 class="text-capitalize">
                                                             <a href="#">184 Lexington Avenue</a>
                                                         </h6>
 
                                                         <p class="text-capitalize">
                                                             <i class="fa fa-map-marker"></i>
-                                                            west flaminggo road, las vegas
+                                                            West Bay, Doha, Qatar
+
                                                         </p>
                                                         <ul class="list-inline card__content">
                                                             <li class="list-inline-item">
@@ -1800,27 +1748,24 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="card__image-footer">
-                                                        <figure>
-                                                            <img src="images/80x80.jpg" alt=""
-                                                                class="img-fluid rounded-circle">
-                                                        </figure>
-                                                        <ul class="list-inline my-auto">
-                                                            <li class="list-inline-item">
-                                                                <a href="#">
-                                                                    tom wilson
-                                                                </a>
-
-                                                            </li>
-
-                                                        </ul>
-                                                        <ul class="list-inline my-auto ml-auto">
-                                                            <li class="list-inline-item">
-
-                                                                <h6>$350.000</h6>
-                                                            </li>
-
-                                                        </ul>
+                                                    <div class="card__image-footer d-flex justify-content-between align-items-center">
+                                                        <div>
+                                                            <!-- WhatsApp Button -->
+                                                            <a href="https://wa.me/1234567890" 
+                                                               class="btn btn-sm" 
+                                                               style="color: #11572E; border: 1px solid #11572E; padding: 6px 12px; text-decoration: none; border-radius: 4px;" 
+                                                               target="_blank">
+                                                                <i class="fa fa-whatsapp"></i> WhatsApp
+                                                            </a>
+                                                    
+                                                            <!-- Call Button -->
+                                                            <a href="tel:1234567890" 
+                                                               class="btn btn-sm ml-2" 
+                                                               style="color: #11572E; border: 1px solid #11572E; padding: 6px 12px; text-decoration: none; border-radius: 4px;">
+                                                                <i class="fa fa-phone"></i> Call
+                                                            </a>
+                                                        </div>
+                                                        <h6 class="mb-0">$350,000</h6>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1842,50 +1787,30 @@
     </section>
     <!-- END LISTING LIST -->
 
-    <!-- CALL TO ACTION -->
-    <section class="cta-v1 py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-9">
-                    <h2 class="text-uppercase text-white">Looking To Sell Or Rent Your Property?</h2>
-                    <p class="text-capitalize text-white">We Will Assist You In The Best And Comfortable Property
-                        Services
-                        For You
-                    </p>
-
-                </div>
-                <div class="col-lg-3">
-                    <a href="#" class="btn btn-light text-uppercase ">request a quote
-                        <i class="fa fa-angle-right ml-3 arrow-btn "></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- END CALL TO ACTION -->
+    
 
     <!-- Footer  -->
     <footer>
-        <div class="wrapper__footer bg-theme-footer">
+        <div class="wrapper__footer bg-theme-footer" style="background-color: #11572E;">
             <div class="container">
                 <div class="row">
                     <!-- ADDRESS -->
                     <div class="col-md-4">
                         <div class="widget__footer">
                             <figure>
-                                <img src="images/logo-blue.png" alt="" class="logo-footer">
+                                <img src="images/1ftlogo.png" alt="" class="logo-footer" style="height: 140px; width: 150px; ">
                             </figure>
-                            <p>
-                                Rethouse Real Estate is a premium Property template based on Bootstrap 4. Rethouse Real
-                                Estate helped thousands of clients to find the right property for their needs.
+                            <!-- <p>
+                                Zahrat Alshamal Real Estate is a trusted name in the property market, offering expert services for buying, selling, and investing in real estate. Our team is dedicated to providing reliable solutions with a focus on customer satisfaction and integrity.
 
-                            </p>
+                            </p> -->
 
-                            <ul class="list-unstyled mb-0 mt-3">
-                                <li> <b> <i class="fa fa-map-marker"></i></b><span>214 West Arnold St. New York, NY
-                                        10002</span> </li>
-                                <li> <b><i class="fa fa-phone-square"></i></b><span>(123) 345-6789</span> </li>
-                                <li> <b><i class="fa fa-phone-square"></i></b><span>(+100) 123 456 7890</span> </li>
-                                <li> <b><i class="fa fa-headphones"></i></b><span>support@realvilla.demo</span> </li>
+                            <ul class="list-unstyled mb-0 mt-1">
+                                <li> <b> <i class="fa fa-map-marker"></i></b><span>Address: Office 01, 4th Floor, Al Qamra Holding Group Building(53), Al Difaaf Street (893), Alsaad
+
+                                    P.O. Box 31551</span> </li>
+                                <li> <b><i class="fa fa-phone-square"></i></b><span>+97470816051</span> </li>
+                                <li> <b><i class="fa fa-headphones"></i></b><span>admin@zahratalshamal.com</span> </li>
                                 <li> <b><i class="fa fa-clock-o"></i></b><span>Mon - Sun / 9:00AM - 8:00PM</span> </li>
                             </ul>
                         </div>
@@ -1898,12 +1823,12 @@
                         <div class="widget__footer">
                             <h4 class="footer-title">Quick Links</h4>
                             <div class="link__category-two-column">
-                                <ul class="list-unstyled ">
+                                <ul class="list-unstyled">
                                     <li class="list-inline-item">
                                         <a href="#">Commercial</a>
                                     </li>
                                     <li class="list-inline-item">
-                                        <a href="#">business</a>
+                                        <a href="#">Business</a>
                                     </li>
                                     <li class="list-inline-item">
                                         <a href="#">House</a>
@@ -1911,37 +1836,35 @@
                                     <li class="list-inline-item">
                                         <a href="#">Residential</a>
                                     </li>
-
                                     <li class="list-inline-item">
                                         <a href="#">Residential Tower</a>
                                     </li>
                                     <li class="list-inline-item">
-                                        <a href="#">Beverly Hills</a>
+                                        <a href="#">The Pearl, Doha</a>
                                     </li>
                                     <li class="list-inline-item">
-                                        <a href="#">Los angeles</a>
+                                        <a href="#">West Bay</a>
                                     </li>
                                     <li class="list-inline-item">
-                                        <a href="#">The beach</a>
+                                        <a href="#">Lusail City</a>
                                     </li>
                                     <li class="list-inline-item">
-                                        <a href="#">Property Listing</a>
-                                    </li>
-
-                                    <li class="list-inline-item">
-                                        <a href="#">Clasic</a>
+                                        <a href="#">Al Wakrah</a>
                                     </li>
                                     <li class="list-inline-item">
                                         <a href="#">Modern Home</a>
                                     </li>
-
                                     <li class="list-inline-item">
-                                        <a href="#">Luxury</a>
+                                        <a href="#">Luxury Villas</a>
                                     </li>
                                     <li class="list-inline-item">
-                                        <a href="#">Beach Pasadena</a>
+                                        <a href="#">Beachfront Properties</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#">Property Listing</a>
                                     </li>
                                 </ul>
+                                
                             </div>
                         </div>
                     </div>
@@ -1985,7 +1908,8 @@
                                 <div class="mt-3">
                                     <input type="text" class="form-control mb-2" placeholder="Your email address">
 
-                                    <button class="btn btn-primary btn-block text-capitalize" type="button">subscribe
+                                    <button class="btn btn-block text-capitalize" type="button" style="background-color: goldenrod;">subscribe
+                                        
 
                                     </button>
                                 </div>
@@ -1998,43 +1922,6 @@
             </div>
         </div>
 
-        <!-- Footer Bottom -->
-        <div class="bg__footer-bottom-v1">
-            <div class="container">
-                <div class="row flex-column-reverse flex-md-row">
-                    <div class="col-md-6">
-                        <span>
-                            © 2020 Rethouse Real Estate - Premium real estate & theme &amp; theme by
-                            <a href="#">retenvi.com</a>
-                        </span>
-                    </div>
-                    <div class="col-md-6">
-                        <ul class="list-inline ">
-                            <li class="list-inline-item">
-                                <a href="#">
-                                    privacy
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#">
-                                    contact
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#">
-                                    about
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#">
-                                    faq
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- End Footer  -->
     </footer>
 
