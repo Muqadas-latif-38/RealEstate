@@ -44,22 +44,22 @@
                 <div class="collapse navbar-collapse" id="main_nav99">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="../PROPERTY/index.html">Home</a>
+                            <a class="nav-link active" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../PROPERTY/listing-style-v5.html">Property Listing</a>
+                            <a class="nav-link" href="./listing-style-v5.html">Property Listing</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../PROPERTY/agent.html">Agents</a>
+                            <a class="nav-link" href="./agent.html">Agents</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../PROPERTY/blog.html">Blogs</a>
+                            <a class="nav-link" href="./blog.html">Blogs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../PROPERTY/about-us.html">About</a>
+                            <a class="nav-link" href="./about-us.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../PROPERTY/contact.html">Contact</a>
+                            <a class="nav-link" href="./contact.html">Contact</a>
                         </li>
                         <!-- Dropdown for Accounts -->
                         <li class="nav-item dropdown">
@@ -67,17 +67,19 @@
                                 Accounts
                             </a>
                             <div class="dropdown-menu" aria-labelledby="accountsDropdown">
-                                <a class="dropdown-item" href="../PROPERTY/login.html">Login</a>
-                                <a class="dropdown-item" href="../PROPERTY/register.html">Register</a>
+                                <a class="dropdown-item" href="./login.html">Login</a>
+                                <a class="dropdown-item" href="./register.html">Register</a>
                             </div>
                         </li>
+                        
                     </ul>
                     <ul class="navbar-nav">
                         <li>
-                            <a href="../PROPERTY/add-property.html" class="btn text-capitalize" style="background-color: #11572E; color: #fff;">
+                            <a href="./add-property.html" class="btn text-capitalize" style="background-color: #11572E; color: #fff;">
                                 <i class="fa fa-plus-circle mr-1"></i> Add Property</a>
                         </li>
                     </ul>
+                    
                     <div class="top-search navigation-shadow">
                         <div class="container">
                             <div class="input-group">
@@ -107,79 +109,165 @@
     <div class="clearfix"></div>
 
 
+    <section class="wrap__contact-map" style="margin-bottom: 30px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29056.940011734676!2d51.476765167253755!3d25.276987219097847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45c5c4c51c7a85%3A0x57776dc1e8abf08b!2sQatar!5e0!3m2!1sen!2sqa!4v1619508519257!5m2!1sen!2sqa" 
+                width="100%" 
+                height="400" 
+                style="border:0; border-radius: 8px;" 
+                allowfullscreen="" 
+                loading="lazy">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
     <!-- Form contact -->
     <section class="wrap__contact-form">
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <h3>List Your Property</h3>
+                    <h5>contact us</h5>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group form-group-name">
-                                <label>Name <span class="required">*</span></label>
-                                <input type="text" class="form-control" name="name" required>
+                                <label>Your name <span class="required"></span></label>
+                                <input type="text" class="form-control" name="name" required="">
+
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group form-group-name">
-                                <label>Mobile <span class="required">*</span></label>
-                                <input type="text" class="form-control" name="mobile" required>
+                                <label>Your email <span class="required"></span></label>
+                                <input type="email" class="form-control" name="email" required="">
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group form-group-name">
+                                <label>website <span class="required"></span></label>
+                                <input type="text" class="form-control" name="website" required="">
+
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group form-group-name">
-                                <label>Email <span class="required">*</span></label>
-                                <input type="email" class="form-control" name="email" required>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group form-group-name">
-                                <label>Property Type <span class="required">*</span></label>
-                                <select class="form-control" name="property_type" required>
-                                    <option value="">Select Property Type</option>
-                                    <option value="Residential">Residential</option>
-                                    <option value="Commercial">Commercial</option>
-                                    <option value="Land">Land</option>
-                                    <option value="Apartment">Apartment</option>
-                                    <option value="Villa">Villa</option>
-                                    <option value="Office Space">Office Space</option>
-                                    <option value="Warehouse">Warehouse</option>
-                                    <option value="Shop">Shop</option>
-                                    <option value="Industrial">Industrial</option>
-                                    <option value="Hotel">Hotel</option>
-                                </select>
-                            </div>
-                            
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group form-group-name">
-                                <label>Address</label>
-                                <input type="text" class="form-control" name="address" required>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group form-group-name">
-                                <label>Value (QAR)</label>
-                                <input type="number" class="form-control" name="value" required>
+                                <label>Subject <span class="required"></span></label>
+                                <input type="text" class="form-control" name="subject" required="">
+
                             </div>
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
-                                <label>Comments</label>
-                                <textarea class="form-control" rows="6" name="comments"></textarea>
+                                <label>Your message </label>
+                                <textarea class="form-control" rows="9" name="message"></textarea>
+                            </div>
+                            <div class="form-group float-right mb-0">
+                                <button type="submit" class="btn  btn-contact" style="background-color: #11572E; color: #fff;">Submit</button>
                             </div>
                         </div>
-                        <div class="col-md-12">
-                            <div class="form-group float-right mb-0">
-                                <button type="submit" class="btn btn-contact" style="background-color: #11572E; color: #fff;">Submit</button>
-                            </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="wrap__contact-open-hours">
+                        <h5 class="text-capitalize">open hours</h5>
+                        <ul class="list-unstyled">
+                            <li class="d-flex align-items-center justify-content-between"><span>Monday - Friday</span>
+                                <span>09 AM - 19 PM</span></li>
+                            <li class="d-flex align-items-center justify-content-between"><span>Saturday</span> <span>09
+                                    AM - 14 PM</span></li>
+                            <li class="d-flex align-items-center justify-content-between"><span>Sunday</span>
+                                <span>Closed</span></li>
+                        </ul>
+                    </div>
+                    <h5>Info location</h5>
+                    <div class="wrap__contact-form-office">
+                        <ul class="list-unstyled">
+                            <li class="list-inline-item">
+                                <a href="#">Commercial</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">Business</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">House</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">Residential</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">Residential Tower</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">The Pearl, Doha</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">West Bay</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">Lusail City</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">Al Wakrah</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">Modern Home</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">Luxury Villas</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">Beachfront Properties</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">Property Listing</a>
+                            </li>
+                        </ul>
+                        
+
+                        <div class="social__media">
+                            <h5>find us</h5>
+                            <ul class="list-inline">
+
+                                <li class="list-inline-item">
+                                    <a href="#" class="btn btn-social rounded text-white facebook">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="btn btn-social rounded text-white twitter">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="btn btn-social rounded text-white whatsapp">
+                                        <i class="fa fa-whatsapp"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="btn btn-social rounded text-white telegram">
+                                        <i class="fa fa-telegram"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="btn btn-social rounded text-white linkedin">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
     <!-- End Form contact  -->
 
 
