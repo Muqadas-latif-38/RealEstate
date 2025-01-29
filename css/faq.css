@@ -133,3 +133,40 @@
     }
 }
 
+/* Cute Language Toggle Button */
+/* Cute Language Toggle Button */
+.lang-btn {
+    background: transparent;
+    border: 1px solid #ccc; /* Light gray border */
+    cursor: pointer;
+    padding: 3px 10px; /* Reduced padding for compact size */
+    margin-left: 15px;
+    font-size: 14px;
+    color: #11572E; /* Green text */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 15px; /* Rounded button */
+    font-weight: bold;
+    outline: none; /* Remove default focus outline */
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover Effect - Slightly Darker Background */
+.lang-btn:hover {
+    background: #f0f0f0; /* Light gray hover effect */
+}
+
+/* Remove black outline when clicked */
+.lang-btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Custom Globe SVG Icon */
+.lang-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+

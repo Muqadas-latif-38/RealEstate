@@ -28,3 +28,22 @@ $(document).ready(function($) {
 });
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  const langButton = document.getElementById("langToggle");
+  const langText = document.getElementById("langText");
+
+  let currentLang = localStorage.getItem("language") || "EN";
+
+  function updateLanguageUI() {
+      langText.textContent = currentLang;
+      document.documentElement.lang = currentLang === "EN" ? "en" : "ar";
+  }
+
+  langButton.addEventListener("click", function () {
+      currentLang = currentLang === "EN" ? "AR" : "EN";
+      localStorage.setItem("language", currentLang);
+      updateLanguageUI();
+  });
+
+  updateLanguageUI(); // Set initial state
+});

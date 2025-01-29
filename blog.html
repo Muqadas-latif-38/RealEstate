@@ -26,7 +26,9 @@
 <!-- favicon.ico in the root directory -->
 <link rel="apple-touch-icon" href="icon.png">
 <meta name="theme-color" content="#3454d1">
-<link href="./css/styles.css?fd365619e86ad9137a29" rel="stylesheet"></head>
+<link href="./css/styles.css?fd365619e86ad9137a29" rel="stylesheet">
+<link rel="stylesheet" href="css/faq.css">
+</head>
 
 <body>
     <!-- HEADER -->
@@ -43,63 +45,37 @@
                 </button>
                 <div class="collapse navbar-collapse" id="main_nav99">
                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="./index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./listing-style-v5.html">Property Listing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./agent.html">Agents</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./blog.html">Blogs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./about-us.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contact.html">Contact</a>
-                        </li>
-                        <!-- Dropdown for Accounts -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="accountsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Accounts
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="accountsDropdown">
-                                <a class="dropdown-item" href="./login.html">Login</a>
-                                <a class="dropdown-item" href="./register.html">Register</a>
-                            </div>
-                        </li>
-                        
+                        <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./listing-style-v5.html">Property Listing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./agent.html">Agents</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./blog.html">Blogs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./about-us.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
                     </ul>
                     <ul class="navbar-nav">
                         <li>
                             <a href="./add-property.html" class="btn text-capitalize" style="background-color: #11572E; color: #fff;">
-                                <i class="fa fa-plus-circle mr-1"></i> Add Property</a>
+                                <i class="fa fa-plus-circle mr-1"></i> Add Property
+                            </a>
+                        </li>
+                        <!-- Cute Language Toggle Button -->
+                        <li class="navbar-nav">
+                            <button id="langToggle" class="lang-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="10" fill="none" stroke="#11572E" stroke-width="2"/>
+                                    <line x1="12" y1="2" x2="12" y2="22" stroke="#11572E" stroke-width="2"/>
+                                    <line x1="2" y1="12" x2="22" y2="12" stroke="#11572E" stroke-width="2"/>
+                                </svg> 
+                                <span id="langText">EN</span>
+                            </button>
+                        </li>
+                        <!-- Sign In Button with Same Styling as Language Button -->
+                        <li class="navbar-nav" >
+                            <a href="./login.html" class="lang-btn" style=" text-decoration: none; color: #11572E;">
+                                Sign In
+                            </a>
                         </li>
                     </ul>
-                    
-                    <div class="top-search navigation-shadow">
-                        <div class="container">
-                            <div class="input-group">
-                                <form action="#">
-                                    <div class="row no-gutters mt-3">
-                                        <div class="col">
-                                            <input class="form-control border-secondary border-right-0 rounded-0"
-                                                type="search" value="" placeholder="Search" id="example-search-input4">
-                                        </div>
-                                        <div class="col-auto">
-                                            <a class="btn btn-outline-secondary border-left-0 rounded-0 rounded-right"
-                                                href="/search-result.html">
-                                                <i class="fa fa-search"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </nav>
@@ -904,6 +880,8 @@
    <!-- SCROLL TO TOP -->
    <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
    <!-- END SCROLL TO TOP -->
-   <script src="./js/index.bundle.js?fd365619e86ad9137a29"></script></body>
+   <script src="./js/index.bundle.js?fd365619e86ad9137a29"></script>
+<script src="js/faq.js"></script>
+</body>
 
 </html>
