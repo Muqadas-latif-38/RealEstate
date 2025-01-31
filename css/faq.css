@@ -133,46 +133,45 @@
     }
 }
 
-/* Cute Language Toggle Button */
-/* Cute Language Toggle Button */
+
+
 .lang-btn {
     background: transparent;
-    border: 1px solid #ccc; /* Light gray border */
+    border: 1px solid #ccc; 
     cursor: pointer;
-    padding: 3px 10px; /* Reduced padding for compact size */
+    padding: 3px 10px; 
     margin-left: 15px;
     font-size: 14px;
-    color: #11572E; /* Green text */
+    color: #11572E; 
     display: flex;
     align-items: center;
     gap: 5px;
-    border-radius: 15px; /* Rounded button */
+    border-radius: 15px; 
     font-weight: bold;
-    outline: none; /* Remove default focus outline */
+    outline: none; 
     transition: background-color 0.3s ease-in-out;
 }
 
-/* Hover Effect - Slightly Darker Background */
+
 .lang-btn:hover {
-    background: #f0f0f0; /* Light gray hover effect */
+    background: #f0f0f0; 
 }
 
-/* Remove black outline when clicked */
+
 .lang-btn:focus {
     outline: none;
     box-shadow: none;
 }
 
-/* Custom Globe SVG Icon */
+
 .lang-btn svg {
     width: 16px;
     height: 16px;
 }
 
 
-* {padding: 0; margin: 0;}
-body {padding: 40px;}
-a {font-size: small; margin-top: 10px; position: relative; display: inline-block;}
+
+
 
 .min-max-slider {position: relative; width: 200px; text-align: center; margin-bottom: 50px;}
 .min-max-slider > label {display: none;}
@@ -184,7 +183,7 @@ span.value.upper::before {content: "- QAR "; display: inline-block; margin-left:
 .min-max-slider > .legend > * {font-size: small; opacity: 0.25;}
 .min-max-slider > input {cursor: pointer; position: absolute;}
 
-/* webkit specific styling */
+
 .min-max-slider > input {
   -webkit-appearance: none;
   outline: none!important;
@@ -192,30 +191,30 @@ span.value.upper::before {content: "- QAR "; display: inline-block; margin-left:
   background-image: linear-gradient(to bottom, transparent 0%, transparent 30%, silver 30%, silver 60%, transparent 60%, transparent 100%);
 }
 .min-max-slider > input::-webkit-slider-thumb {
-  -webkit-appearance: none; /* Override default look */
+  -webkit-appearance: none; 
   appearance: none;
-  width: 14px; /* Set a specific slider handle width */
-  height: 14px; /* Slider handle height */
-  background: #eee; /* Green background */
-  cursor: pointer; /* Cursor on hover */
+  width: 14px; 
+  height: 14px; 
+  background: #eee; 
+  cursor: pointer; 
   border: 1px solid gray;
   border-radius: 100%;
 }
 .min-max-slider > input::-webkit-slider-runnable-track {cursor: pointer;}
 span.value.lower::before { 
-    content: "QAR ";  /* Add QAR before the price */
-    font-size: 0.8em;  /* Make QAR smaller */
-    color: green;      /* Make QAR green */
-    font-weight: bold; /* Bold for visibility */
-    margin-right: 4px; /* Add space between QAR and the price */
+    content: "QAR ";  
+    font-size: 0.8em; 
+    color: green;      
+    font-weight: bold; 
+    margin-right: 4px; 
     display: inline-block;
 }
 
 span.value.upper::before { 
-    content: "- QAR ";  /* Add QAR before the upper price */
-    font-size: 0.8em;  /* Make QAR smaller */
-    color: green;      /* Make QAR green */
-    font-weight: bold; /* Bold for visibility */
-    margin-right: 4px; /* Add space between QAR and the price */
+    content: "- QAR ";  
+    font-size: 0.8em;  
+    color: green;      
+    font-weight: bold; 
+    margin-right: 4px; 
     display: inline-block;
 }
