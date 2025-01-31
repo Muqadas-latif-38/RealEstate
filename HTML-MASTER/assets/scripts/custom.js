@@ -112,3 +112,4 @@ $(document).ready(function () {
         // Chart.defaults.global.defaultFontFamily = "Fira Sans";
     };
 });
+
