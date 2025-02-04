@@ -219,7 +219,7 @@ span.value.upper::before {
     display: inline-block;
 }
 .btns{
-    padding: 8px 12px;
+    padding: 8px 25px;
     border-radius: 5px;
     border: 1px solid #11572E;
 }
