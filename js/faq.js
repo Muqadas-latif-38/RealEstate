@@ -160,3 +160,34 @@ var sliders = document.querySelectorAll('.min-max-slider');
 sliders.forEach( function(slider) {
     init(slider);
 });
+
+function toggleStatus(selectedButton, type) {
+  // Reset all status buttons
+  document.querySelectorAll('.status-btn').forEach(btn => {
+      btn.style.backgroundColor = "#fff";
+      btn.style.color = "#11572E";
+  });
+
+  // Set clicked button to active
+  selectedButton.style.backgroundColor = "#11572E";
+  selectedButton.style.color = "#fff";
+
+  // Show/Hide toggles based on the selected type (Buy or Rent)
+  if (type === 'buy') {
+      document.getElementById('buyOptions').style.display = "flex"; // Show the "ALL", "Off Plan", "Ready"
+  } else {
+      document.getElementById('buyOptions').style.display = "none"; // Hide the "ALL", "Off Plan", "Ready"
+  }
+}
+
+function setActiveToggle(selectedToggle) {
+  // Reset all toggle buttons
+  document.querySelectorAll('.toggle-btn').forEach(btn => {
+      btn.style.backgroundColor = "#fff";
+      btn.style.color = "#11572E";
+  });
+
+  // Set clicked toggle to active
+  selectedToggle.style.backgroundColor = "#11572E";
+  selectedToggle.style.color = "#fff";
+}

@@ -218,3 +218,24 @@ span.value.upper::before {
     margin-right: 4px; 
     display: inline-block;
 }
+.btns{
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #11572E;
+}
+ @media (max-width: 600px) {
+           .btnsdiv{
+            margin: 0px 20px;
+           }
+            .btns {
+                padding: 10px; 
+                font-size: 14px; 
+             
+                
+            }
+        }
+@media(max-width:400px){
+    .btnsdiv{
+        margin: 15px 20px;
+    }
+}        

@@ -101,130 +101,173 @@
     <!-- END BREADCRUMB -->
     <div class="search__area bg__shadow">
         <div class="container">
-            <div class="search__area-inner">
-                <div class="row">
-                    <div class="col-6 col-lg-3 col-md-3">
-                        <div class="form-group">
-                            <select class="wide select_option">
-                                <option data-display="Property Status">Property Status</option>
-                                <option>For Buy</option>
-                                <option>For Rent</option>
-
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-3 col-md-3">
-                        <div class="form-group">
-                            <select class="wide select_option">
-                                <option data-display="Property Type">Property Type</option>
-                                <option>Showroom</option>
-                                <option>Apartment</option>
-                                <option>Penthouse</option>
-                                <option>Hotel Apartment</option>
-                                <option>Chalet</option>
-                                <option>Townhouse</option>
-                                <option>Office</option>
-                                <option>Retail Shop</option>
-                                <option>Compound Villa</option>
-                                <option>Standalone Villa</option>
-                                <option>Commercial Villa</option>
-                                <option>Retail Space</option>
-                                <option>Shop</option>
-                                <option>Restaurant</option>
-                                <option>Land</option>
-                                <option>Whole Building</option>
-                                <option>Labor Camp</option>
-                                <option>Warehouse</option>
-                                <option>Factory</option>
-                                <option>School</option>
-                                <option>Clinic / Hospital</option>
-                                <option>Land Plot</option>
-                                <option>Industrial Land</option>
-                                <option>Duplex</option>
-                                <option>Hotel</option>
-                              </select>
-                              
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-3 col-md-3">
-                        <div class="form-group">
-                            <select class="wide select_option">
-                                <option data-display="Area From">Area From </option>
-                                <option>1500</option>
-                                <option>1200</option>
-                                <option>900</option>
-                                <option>600</option>
-                                <option>300</option>
-                                <option>100</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-3 col-md-3">
-                        <div class="form-group">
-                            <select class="wide select_option">
-                                <option data-display="Locations">Locations</option>
-                                <option>Doha</option>
-                                <option>Al Wakrah</option>
-                                <option>Al Khor</option>
-                                <option>Al Rayyan</option>
-                                <option>Umm Salal</option>
-                                <option>Al Shamal</option>
-                                <option>Dukhan</option>
-                                <option>Mesaieed</option>
+            <div class="search__area">
+                <div class="container">
+                    <div class="search__area-inner">
+                        <div class="row">
+                            <div class="btnsdiv">
+                                <div style="display: flex; gap: 10px;">
+                                    <button class="btns status-btn active" onclick="toggleStatus(this, 'buy')" 
+                                            style="background-color: #11572E; color: #fff; ">
+                                        For Buy
+                                    </button>
+                                    <button class="btns status-btn" onclick="toggleStatus(this, 'rent')" 
+                                            style="background-color: #fff; color: #11572E;  ">
+                                        For Rent
+                                    </button>
+                                </div>
                                 
-                            </select>
+                            </div>
+                            <div style="margin: 10px 20px;">
+                                <div id="buyOptions" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                                    <button class="togbtn toggle-btn active" onclick="setActiveToggle(this)" 
+                                            style="background-color: #11572E; color: #fff; border: 1px solid #11572E; border-radius: 5px; transition: 0.3s; padding: 5px 15px; font-size: 12px;">
+                                        ALL
+                                    </button>
+                                    <button class="togbtn toggle-btn" onclick="setActiveToggle(this)" 
+                                            style="background-color: #fff; color: #11572E; border: 1px solid #11572E; border-radius: 5px; transition: 0.3s; padding: 5px 15px; font-size: 12px;">
+                                        Off Plan
+                                    </button>
+                                    <button class="togbtn toggle-btn" onclick="setActiveToggle(this)" 
+                                            style="background-color: #fff; color: #11572E; border: 1px solid #11572E; border-radius: 5px; transition: 0.3s; padding: 5px 15px; font-size: 12px;">
+                                        Ready
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-3">
+                                <div class="form-group">
+                                    <select class="wide select_option">
+                                        <option data-display="Property Type">Property Type</option>
+                                        <option>Showroom</option>
+                                        <option>Apartment</option>
+                                        <option>Penthouse</option>
+                                        <option>Hotel Apartment</option>
+                                        <option>Chalet</option>
+                                        <option>Townhouse</option>
+                                        <option>Office</option>
+                                        <option>Retail Shop</option>
+                                        <option>Compound Villa</option>
+                                        <option>Standalone Villa</option>
+                                        <option>Commercial Villa</option>
+                                        <option>Retail Space</option>
+                                        <option>Shop</option>
+                                        <option>Restaurant</option>
+                                        <option>Land</option>
+                                        <option>Whole Building</option>
+                                        <option>Labor Camp</option>
+                                        <option>Warehouse</option>
+                                        <option>Factory</option>
+                                        <option>School</option>
+                                        <option>Clinic / Hospital</option>
+                                        <option>Land Plot</option>
+                                        <option>Industrial Land</option>
+                                        <option>Duplex</option>
+                                        <option>Hotel</option>
+                                      </select>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-3">
+                                <div class="form-group">
+                                    <select class="wide select_option">
+                                        <option data-display="Area From">Area From </option>
+                                        <option>1500</option>
+                                        <option>1200</option>
+                                        <option>900</option>
+                                        <option>600</option>
+                                        <option>300</option>
+                                        <option>100</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-3">
+                                <div class="form-group">
+                                    <select class="wide select_option">
+                                        <option data-display="Locations">Locations</option>
+                                        <option>Doha</option>
+                                        <option>Al Wakrah</option>
+                                        <option>Al Khor</option>
+                                        <option>Al Rayyan</option>
+                                        <option>Umm Salal</option>
+                                        <option>Al Shamal</option>
+                                        <option>Dukhan</option>
+                                        <option>Mesaieed</option>
+                                        
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-3">
+                                <div class="form-group">
+                                    <select class="wide select_option">
+                                        <option data-display="Bedrooms">Bedrooms</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-6 col-lg-3 col-md-3">
+                                <div class="form-group" style="display: flex; gap: 10px; align-items: center;">
+                                    <input type="number" class="form-control" placeholder="Min Price - QAR" min="0" style="width: 130px;">
+                                    <input type="number" class="form-control" placeholder="Max Price - QAR" min="0" style="width: 130px;">
+                                </div>
+                                
+                            </div>
+        
+                            <div class="col-12 col-lg-3 col-md-3" style="margin-left: 30px;">
+                                <div class="min-max-slider" data-legendnum="2">
+                                    <label for="min">Minimum price</label>
+                                    <input id="min" class="min" name="min" type="range" step="1" min="30000" max="100000" />
+                                    <label for="max">Maximum price</label>
+                                    <input id="max" class="max" name="max" type="range" step="1" min="30000" max="100000" />
+                                </div>
+                                
+                                
+                               
+                                
+                               
+                            </div>
+        
+                            <!-- <div class="col-12 col-lg-3 col-md-3">
+                                <div class="form-group">
+                                    <div class="filter__price">
+                                        <input class="price-range" type="text" name="my_range" value=""  />
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="col-auto">
+                                <div class="form-group">
+                                    <button class="btn  text-uppercase btn-block" style="background-color: #11572E; border-color: #11572E; color: #fff; border-radius: 5px;"> search <i
+                                            class="fa fa-search ml-1"></i></button>
+                                </div>
+                                <!-- <div style="margin: 10px 20px;">
+                                    <div id="buyOptions" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                                        <button class="togbtn toggle-btn active" onclick="setActiveToggle(this)" 
+                                                style="background-color: #11572E; color: #fff; border: 1px solid #11572E; border-radius: 5px; transition: 0.3s; padding: 5px 15px; font-size: 12px;">
+                                            ALL
+                                        </button>
+                                        <button class="togbtn toggle-btn" onclick="setActiveToggle(this)" 
+                                                style="background-color: #fff; color: #11572E; border: 1px solid #11572E; border-radius: 5px; transition: 0.3s; padding: 5px 15px; font-size: 12px;">
+                                            Off Plan
+                                        </button>
+                                        <button class="togbtn toggle-btn" onclick="setActiveToggle(this)" 
+                                                style="background-color: #fff; color: #11572E; border: 1px solid #11572E; border-radius: 5px; transition: 0.3s; padding: 5px 15px; font-size: 12px;">
+                                            Ready
+                                        </button>
+                                    </div>
+                                </div> -->
+                            </div>
+                            
+                            
                         </div>
-                    </div>
-                    <div class="col-6 col-lg-3 col-md-3">
-                        <div class="form-group">
-                            <select class="wide select_option">
-                                <option data-display="Bedrooms">Bedrooms</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-3 col-md-3">
-                        <div class="form-group">
-                            <select class="wide select_option">
-                                <option data-display="Bathrooms">Bathrooms</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-
-
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-3 col-md-3">
-                        <div class="min-max-slider" data-legendnum="2">
-                            <label for="min">Minimum price</label>
-                            <input id="min" class="min" name="min" type="range" step="1" min="30000" max="100000" />
-                            <label for="max">Maximum price</label>
-                            <input id="max" class="max" name="max" type="range" step="1" min="30000" max="100000" />
-                        </div>
-                        
-                        
-                       
-                        
-                       
-                    </div>
-                    <div class="col-12 col-lg-3 col-md-3">
-                        <div class="form-group">
-                            <button class="btn text-uppercase btn-block" style="background-color: #11572E; color: #fff;"> search <i
-                                    class="fa fa-search ml-1"></i></button>
-                        </div>
+        
                     </div>
                 </div>
-
             </div>
         </div>
     </div>

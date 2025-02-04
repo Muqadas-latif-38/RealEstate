@@ -57,13 +57,17 @@
                     <li class="nav-item"><a class="nav-link" href="./about-us.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
                 </ul>
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ">
                     <li>
                         <a href="./add-property.html" class="btn text-capitalize" style="background-color: #11572E; color: #fff;">
                             <i class="fa fa-plus-circle mr-1"></i> Add Property
                         </a>
                     </li>
-                    <!-- Cute Language Toggle Button -->
+                    <li class="navbar-nav" >
+                        <a href="./login.html" class="lang-btn" style=" text-decoration: none; color: #11572E;">
+                            Sign In
+                        </a>
+                    </li>
                     <li class="navbar-nav">
                         <button id="langToggle" class="lang-btn">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -74,21 +78,14 @@
                             <span id="langText">EN</span>
                         </button>
                     </li>
-                    <!-- Sign In Button with Same Styling as Language Button -->
-                    <li class="navbar-nav" >
-                        <a href="./login.html" class="lang-btn" style=" text-decoration: none; color: #11572E;">
-                            Sign In
-                        </a>
-                    </li>
+                    
+                   
                 </ul>
             </div>
         </div>
     </nav>
     
 
-
-
-    
     
    
     <div class="slider-container">
@@ -213,14 +210,33 @@
         <div class="container">
             <div class="search__area-inner">
                 <div class="row">
-                    <div class="col-6 col-lg-3 col-md-3">
-                        <div class="form-group">
-                            <select class="wide select_option">
-                                <option data-display="Property Status">Property Status</option>
-                                <option>For Buy</option>
-                                <option>For Rent</option>
-
-                            </select>
+                    <div class="btnsdiv">
+                        <div style="display: flex; gap: 10px;">
+                            <button class="btns status-btn active" onclick="toggleStatus(this, 'buy')" 
+                                    style="background-color: #11572E; color: #fff; ">
+                                For Buy
+                            </button>
+                            <button class="btns status-btn" onclick="toggleStatus(this, 'rent')" 
+                                    style="background-color: #fff; color: #11572E;  ">
+                                For Rent
+                            </button>
+                        </div>
+                        
+                    </div>
+                    <div style="margin: 10px 20px;">
+                        <div id="buyOptions" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                            <button class="togbtn toggle-btn active" onclick="setActiveToggle(this)" 
+                                    style="background-color: #11572E; color: #fff; border: 1px solid #11572E; border-radius: 5px; transition: 0.3s; padding: 5px 15px; font-size: 12px;">
+                                ALL
+                            </button>
+                            <button class="togbtn toggle-btn" onclick="setActiveToggle(this)" 
+                                    style="background-color: #fff; color: #11572E; border: 1px solid #11572E; border-radius: 5px; transition: 0.3s; padding: 5px 15px; font-size: 12px;">
+                                Off Plan
+                            </button>
+                            <button class="togbtn toggle-btn" onclick="setActiveToggle(this)" 
+                                    style="background-color: #fff; color: #11572E; border: 1px solid #11572E; border-radius: 5px; transition: 0.3s; padding: 5px 15px; font-size: 12px;">
+                                Ready
+                            </button>
                         </div>
                     </div>
                     <div class="col-6 col-lg-3 col-md-3">
@@ -301,20 +317,14 @@
                         </div>
                     </div>
                     <div class="col-6 col-lg-3 col-md-3">
-                        <div class="form-group">
-                            <select class="wide select_option">
-                                <option data-display="Bathrooms">Bathrooms</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-
-
-                            </select>
+                        <div class="form-group" style="display: flex; gap: 10px; align-items: center;">
+                            <input type="number" class="form-control" placeholder="Min Price - QAR" min="0" style="width: 130px;">
+                            <input type="number" class="form-control" placeholder="Max Price - QAR" min="0" style="width: 130px;">
                         </div>
+                        
                     </div>
 
-                    <div class="col-12 col-lg-3 col-md-3">
+                    <div class="col-12 col-lg-3 col-md-3" style="margin-left: 30px;">
                         <div class="min-max-slider" data-legendnum="2">
                             <label for="min">Minimum price</label>
                             <input id="min" class="min" name="min" type="range" step="1" min="30000" max="100000" />
@@ -335,12 +345,30 @@
                             </div>
                         </div>
                     </div> -->
-                    <div class="col-12 col-lg-3 col-md-3">
+                    <div class="col-auto">
                         <div class="form-group">
-                            <button class="btn  text-uppercase btn-block" style="background-color: #11572E; border-color: #11572E; color: #fff;"> search <i
+                            <button class="btn  text-uppercase btn-block" style="background-color: #11572E; border-color: #11572E; color: #fff; border-radius: 5px;"> search <i
                                     class="fa fa-search ml-1"></i></button>
                         </div>
+                        <!-- <div style="margin: 10px 20px;">
+                            <div id="buyOptions" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                                <button class="togbtn toggle-btn active" onclick="setActiveToggle(this)" 
+                                        style="background-color: #11572E; color: #fff; border: 1px solid #11572E; border-radius: 5px; transition: 0.3s; padding: 5px 15px; font-size: 12px;">
+                                    ALL
+                                </button>
+                                <button class="togbtn toggle-btn" onclick="setActiveToggle(this)" 
+                                        style="background-color: #fff; color: #11572E; border: 1px solid #11572E; border-radius: 5px; transition: 0.3s; padding: 5px 15px; font-size: 12px;">
+                                    Off Plan
+                                </button>
+                                <button class="togbtn toggle-btn" onclick="setActiveToggle(this)" 
+                                        style="background-color: #fff; color: #11572E; border: 1px solid #11572E; border-radius: 5px; transition: 0.3s; padding: 5px 15px; font-size: 12px;">
+                                    Ready
+                                </button>
+                            </div>
+                        </div> -->
                     </div>
+                    
+                    
                 </div>
 
             </div>
