@@ -134,7 +134,6 @@
 }
 
 
-
 .lang-btn {
     background: transparent;
     border: 1px solid #ccc; 
@@ -163,13 +162,10 @@
     box-shadow: none;
 }
 
-
 .lang-btn svg {
     width: 16px;
     height: 16px;
 }
-
-
 
 
 
@@ -239,3 +235,47 @@ span.value.upper::before {
         margin: 15px 20px;
     }
 }        
+
+
+
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+
+  .whatsapp-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #25D366;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+ 
+  .whatsapp-button:hover {
+    background-color: #11572E;
+    color: white;
+    text-decoration: none;
+  }
+  @media (max-width: 768px) {
+    .whatsapp-button {
+      font-size: 14px; 
+      padding: 8px 16px; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .whatsapp-button {
+      font-size: 12px; 
+      padding: 6px 12px; 
+    }
+  }
